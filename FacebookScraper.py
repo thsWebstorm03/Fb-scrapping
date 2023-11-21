@@ -35,8 +35,8 @@ class FacebookScraper:
         self.option.add_argument("start-maximized")
         self.option.add_argument("--disable-extensions")
         #self.browser = browser
-        # CHROMEDRIVER_PATH = '/root/Scrapers/FacebookGUI/chromedriver'
-        CHROMEDRIVER_PATH = 'chromedriver.exe'
+        # CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
+        CHROMEDRIVER_PATH = 'chromedriver_112.exe'
         s = Service(executable_path=CHROMEDRIVER_PATH)
         self.browser = webdriver.Chrome(service=s, options=self.option)
         #self.browser = webdriver.Chrome(executable_path=":~/Scrapers/FacebookGUI/webdriver/chromedriver-linux64/chromedriver", options=self.option)
